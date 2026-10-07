@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>APP INTRANET</title><style>body{font-family:sans-serif;margin:0;background:#f5f7fa;color:#172033}.head{padding:22px 18px;background:#fff;font-size:22px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:18px}.item{background:#fff;border:0;border-radius:16px;padding:18px 8px;min-height:100px;box-shadow:0 2px 10px #0001;text-align:center;font-weight:600}.ico{font-size:30px;display:block;margin-bottom:9px}.note{padding:0 18px 18px;color:#687386;font-size:12px}</style></head><body><div class="head">APP INTRANET</div><div class="grid" id="g"></div><div class="note">Login dan hak akses tetap mengikuti sistem resmi SAT.</div><script>
+const links=[
+["APP INTRANET ORIGINAL","https://webview-intranet-prd-rjzigbgnna-et.a.run.app?agreementStatus=N","▦"],
+["Human Capital","https://intranet.sat.co.id/humancapital/public/index/mainmenu","HC"],
+["RRAK","https://intranet.sat.co.id/rrak/public/","RR"],
+["BST Online","https://intranet.sat.co.id/bst_online/signin","BS"],
+["KOPKAR","https://intranet.sat.co.id/koperasi/public/","KO"],
+["SO Karyawan","https://hosokartoko0201.sat.co.id","SO"],
+["SO ATM / Tenant","https://intranet.sat.co.id/st/public/so/atm","AT"]];
+for(const [n,u,i] of links){const b=document.createElement("button");b.className="item";b.innerHTML='<span class="ico">'+i+'</span>'+n;b.onclick=()=>location.href=u;g.appendChild(b)}
+</script></body></html>
